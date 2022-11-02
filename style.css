@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'dela_gothic_oneregular';
+    src: url('./assets/fonts/Dela_Gothic_One/webfontkit-20221102-144326/delagothicone-regular-webfont.woff2') format('woff2'),
+        url('./assets/fonts/Dela_Gothic_One/webfontkit-20221102-144326/delagothicone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'interregular';
+    src: url('./assets/fonts/Inter/webfontkit-20221102-144707/inter-variablefont_slntwght-webfont.woff2') format('woff2'),
+        url('./assets/fonts/Inter/webfontkit-20221102-144707/inter-variablefont_slntwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+h1 {
+    font-family: "interregular", serif;
+}
