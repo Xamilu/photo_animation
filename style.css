@@ -40,6 +40,18 @@ h1 {
     line-height: 0.9;
     font-size: 4.4em;
     font-weight: 400;
+    animation: fromTheLeft 2s;
+}
+
+@keyframes fromTheLeft {
+    0% {
+        margin-left: -100px;
+        opacity: 0.1;
+    }
+    100% {
+        margin-left: 0px;
+        opacity: 1;
+    }
 }
 
 .text {
@@ -50,8 +62,21 @@ h1 {
     font-size: 1.21em;
     line-height: 2.2;
     font-weight: 300;
-    margin-bottom: 5em;
+    margin-bottom: 3em;
+    animation: fromTheRight 2s;
 }
+
+@keyframes fromTheRight {
+    0% {
+        margin-left: 100px;
+        opacity: 0.1;
+    }
+    100% {
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
 
 .home_container, .footer_container  {
     width: 100%;
@@ -60,10 +85,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.footer_container {
-    margin-top: 5.5%;
 }
 
 .box_container {
@@ -85,11 +106,30 @@ h1 {
     letter-spacing: 0.5rem;
     padding: 30px 80px 35px 55px;
     font-weight: 400;
+    font-size: 17px;
     border: 3px solid #FFFFFF;
+    background-color: transparent;
     background-image: url(./assets/img/arrow.png);
     background-size: 7%;
     background-repeat: no-repeat;
     background-position: 78% 48%;
+    transition: 0.3s;
+    animation: fromTheBottom 2s;
+}
+
+.next_section:hover {
+    transform: scale(1.04);
+}
+
+@keyframes fromTheBottom {
+    0% {
+        margin-top: 50px;
+        opacity: 0.1;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
 }
 
 .img_box {
@@ -102,9 +142,7 @@ h1 {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    /*transform: scale(1.06);*/
 }
-
 
 .text_section {
     width: 50%;
@@ -113,26 +151,46 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 5;
 }
 
 .text_child {
     width: 75%;
     margin-left: 12.5%;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
 }
+
 .title {
     color: #fff;
     font-family: 'Inter', sans-serif;
     letter-spacing: 0.52rem;
     width: calc(100% + 0.4rem);
     font-size: 1.02em;
+    animation: fromTheTop 2s;
+}
+
+@keyframes fromTheTop {
+    0% {
+        margin-top: -50px;
+    }
+    100% {
+        margin-top: 0px;
+    }
 }
 
 .headline {
     font-size: 2.6em;
     letter-spacing: 0.7rem;
     margin: 55px 0;
+    animation: a 2s;
+}
+
+@keyframes a {
+    0% {
+        margin: 55px 0;
+    }
+    100% {
+        margin: 55px 0;
+    }
 }
 
 #align_right {
@@ -142,7 +200,7 @@ h1 {
 #child_footer_container {
     width: 63.5%;
     height: 50%;
-    margin-top: 6em;
+    margin: 5.9em 2.5em 0 0;
 }
 
 #footer_title {
@@ -166,6 +224,18 @@ h1 {
     border: 3px solid #FFFFFF;
     background-repeat: no-repeat;
     transition: 0.375s ease;
+    animation: FadeFromBottom 1s;
+}
+
+@keyframes FadeFromBottom {
+    0% {
+        opacity: 0;
+        margin-top: 80px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
 }
 
 .social_media:hover {
@@ -182,22 +252,26 @@ h1 {
     background: url('https://api.iconify.design/akar-icons/tiktok-fill.svg?color=white') 
     no-repeat center center / contain;
     background-size: 59%;
+    animation-duration: 1.4s;
 }
 
 #youtube {
     background: url('https://api.iconify.design/carbon/logo-youtube.svg?color=white')
-     no-repeat center center / contain;
-     background-size: 62%;
+    no-repeat center center / contain;
+    background-size: 62%;
+    animation-duration: 1.8s;
 }
 
 #twitter {
     background: url('https://api.iconify.design/mdi/twitter.svg?color=white') 
     no-repeat center center / contain;
     background-size: 58%;
+    animation-duration: 2s;
 }
 
 #mail {
     background: url('https://api.iconify.design/ic/round-mail.svg?color=white') 
     no-repeat center center / contain;
     background-size: 62%;
+    animation-duration: 2.4s;
 }
