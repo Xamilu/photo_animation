@@ -32,7 +32,7 @@ body {
     margin: 0;
 }
 
-h1 {
+#big_title {
     color: #FFFFFF;
     font-family: 'Dela Gothic One', cursive;
     letter-spacing: 0.6rem;
@@ -76,7 +76,6 @@ h1 {
         opacity: 1;
     }
 }
-
 
 .home_container, .footer_container  {
     width: 100%;
@@ -181,6 +180,11 @@ h1 {
     font-size: 2.6em;
     letter-spacing: 0.7rem;
     margin: 55px 0;
+    color: #FFFFFF;
+    font-family: 'Dela Gothic One', cursive;
+    width: calc(100% + 0.5rem);
+    line-height: 0.9;
+    font-weight: 400;
     animation: a 2s;
 }
 
@@ -206,7 +210,14 @@ h1 {
 #footer_title {
     font-size: 2.7em;
     letter-spacing: 0.65rem;
+    color: #FFFFFF;
+    font-family: 'Dela Gothic One', cursive;
+    width: calc(100% + 0.5rem);
+    line-height: 0.9;
+    font-weight: 400;
+    animation: fromTheLeft 2s;
 }
+
 
 #footer_text {
     margin: 55px 0 65px 0;
